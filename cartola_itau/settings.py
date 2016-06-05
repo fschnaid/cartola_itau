@@ -77,7 +77,7 @@ ROOT_URLCONF = 'cartola_itau.urls'
 
 #TEMPLATE_PATH = os.path.join(PROJECT_PATH, 'Templates')
 TEMPLATE_DIRS = (
-    'C:\Users\Fernando\Desktop\Django\cartola-fc-do-itau\cartola_itau\Templates',
+    os.path.join('Templates'),
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
@@ -131,8 +131,6 @@ USE_L10N = True
 
 USE_TZ = True
 
-
-import os.path
 
 STATIC_ROOT = ''
 
