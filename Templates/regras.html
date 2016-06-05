@@ -1,0 +1,260 @@
+
+<!DOCTYPE HTML>
+{% load static %}
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link href="{% static 'css/rank.css' %}" rel="stylesheet">
+    
+
+        <title>Ranking</title>
+
+</head>
+<body>
+
+    <div class='page-header'>
+        <h1>Cartola FC do Itaú</h1>
+    </div>
+
+    <div class='botao'  style="text-align:center;">
+        <a href="/" class="botao_ranking">Home</a>
+        <a href="/regras/" class="botao_regra">Regras</a>
+    </div>
+    <p> </p>
+    
+    <p id='status_mercado'> {{ mercado }} </p>
+        <p>&nbsp;</p>
+
+
+        <p><strong>REGRAS:</strong></p>
+
+        <p>- Cartoletas: Todos come&ccedil;am com $100 Cartoletas, n&atilde;o ser&aacute; poss&iacute;vel cria&ccedil;&atilde;o de novos times ao longo do campeonato.</p>
+ 
+        <p>- Entrada: R$100,00 (Dep&oacute;sito at&eacute; 17/05).</p>
+        <p>&nbsp;</p>
+        <p><strong>PREMIA&Ccedil;&Atilde;O:</strong></p>
+        <p>Os pr&ecirc;mios ser&atilde;o entregues apenas no final do campeonato.</p>
+        <p>S&atilde;o <strong>23</strong> Maneiras de ganhar algum pr&ecirc;mio (1 Campe&atilde;o geral, 1 Vice, 2 turnos, 15 pr&ecirc;mios mensais, 3 pr&ecirc;mios alternativos e 1 por equipes).</p>
+        <p> Crit&eacute;rios:</p>
+        <p> - <strong>Campe&atilde;o Geral:&nbsp; (10% Premia&ccedil;&atilde;o)</strong></p>
+        <p><strong> - Vice da Gama: (6% Premia&ccedil;&atilde;o)</strong></p>
+        <p><strong> - Campe&atilde;o Turnos: (5% Premia&ccedil;&atilde;o - Primeiro Turno / 5% Premia&ccedil;&atilde;o - Segundo Turno)</strong></p>
+        <p><strong>- Campe&otilde;es Mensais: (60% Premia&ccedil;&atilde;o)</strong></p>
+        <table>
+        <tbody>
+        <tr>
+        <td width="93">
+        <p><strong>M&ecirc;s</strong></p>
+        </td>
+        <td width="93">
+        <p><strong>Premia&ccedil;&atilde;o 1&ordm; Lugar</strong></p>
+        </td>
+        <td width="93">
+        <p><strong>Premia&ccedil;&atilde;o 2&ordm; Lugar</strong></p>
+        </td>
+        <td width="93">
+        <p><strong>Rodadas</strong></p>
+        </td>
+        </tr>
+        <tr>
+        <td width="93">
+        <p>Maio</p>
+        </td>
+        <td width="93">
+        <p>5%</p>
+        </td>
+        <td width="93">
+        <p>1%</p>
+        </td>
+        <td width="93">
+        <p>4</p>
+        </td>
+        </tr>
+        <tr>
+        <td width="93">
+        <p>Junho</p>
+        </td>
+        <td width="93">
+        <p>6%</p>
+        </td>
+        <td width="93">
+        <p>3%</p>
+        </td>
+        <td width="93">
+        <p>8</p>
+        </td>
+        </tr>
+        <tr>
+        <td width="93">
+        <p>Julho</p>
+        </td>
+        <td width="93">
+        <p>5%</p>
+        </td>
+        <td width="93">
+        <p>2%</p>
+        </td>
+        <td width="93">
+        <p>5</p>
+        </td>
+        </tr>
+        <tr>
+        <td width="93">
+        <p>Agosto</p>
+        </td>
+        <td width="93">
+        <p>5%</p>
+        </td>
+        <td width="93">
+        <p>2%</p>
+        </td>
+        <td width="93">
+        <p>5</p>
+        </td>
+        </tr>
+        <tr>
+        <td width="93">
+        <p>Setembro</p>
+        </td>
+        <td width="93">
+        <p>6%</p>
+        </td>
+        <td width="93">
+        <p>2%</p>
+        </td>
+        <td width="93">
+        <p>5</p>
+        </td>
+        </tr>
+        <tr>
+        <td width="93">
+        <p>Outubro</p>
+        </td>
+        <td width="93">
+        <p>8%</p>
+        </td>
+        <td width="93">
+        <p>3%</p>
+        </td>
+        <td width="93">
+        <p>6</p>
+        </td>
+        </tr>
+        <tr>
+        <td width="93">
+        <p>Novembro</p>
+        </td>
+        <td width="93">
+        <p>6%</p>
+        </td>
+        <td width="93">
+        <p>2%</p>
+        </td>
+        <td width="93">
+        <p>4</p>
+        </td>
+        </tr>
+        <tr>
+        <td width="93">
+        <p>Dezembro</p>
+        </td>
+        <td width="93">
+        <p>4%</p>
+        </td>
+        <td width="93">
+        <p>0%</p>
+        </td>
+        <td width="93">
+        <p>1</p>
+        </td>
+        </tr>
+        <tr>
+        <td width="93">
+        <p><strong>Total</strong></p>
+        </td>
+        <td width="93">
+        <p><strong>45%</strong></p>
+        </td>
+        <td width="93">
+        <p><strong>15%</strong></p>
+        </td>
+        <td width="93">
+        <p><strong>20</strong></p>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+        <p></p>
+        <p>&nbsp;</p>
+        <p><strong>- Desempenhos Alternativos (6,5% Premia&ccedil;&atilde;o):</strong></p>
+        <table>
+        <tbody>
+        <tr>
+        <td width="151">
+        <p>Pr&ecirc;mio</p>
+        </td>
+        <td width="104">
+        <p>Premia&ccedil;&atilde;o</p>
+        </td>
+        <td width="295">
+        <p>Descri&ccedil;&atilde;o</p>
+        </td>
+        </tr>
+        <tr>
+        <td width="151">
+        <p>Toma essa!</p>
+        </td>
+        <td width="104">
+        <p>2,5%</p>
+        </td>
+        <td width="295">
+        <p>Maior pontua&ccedil;&atilde;o em uma &uacute;nica rodada.</p>
+        </td>
+        </tr>
+        <tr>
+        <td width="151">
+        <p>Tio Patinhas</p>
+        </td>
+        <td width="104">
+        <p>2%</p>
+        </td>
+        <td width="295">
+        <p>Maior nro Cartoletas.</p>
+        </td>
+        </tr>
+        <tr>
+        <td width="151">
+        <p>Michael Phelps</p>
+        </td>
+        <td width="104">
+        <p>2%</p>
+        </td>
+        <td width="295">
+        <p>Maior nro de medalhas.</p>
+        </td>
+        </tr>
+        <tr>
+        <td width="151">
+        <p><strong>Total</strong></p>
+        </td>
+        <td width="104">
+        <p><strong>6,5%</strong></p>
+        </td>
+        <td width="295">
+        <p><strong>----------------</strong></p>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+        <p>&nbsp;</p>
+        <p><strong>- Equipes (7,5% Premia&ccedil;&atilde;o):</strong></p>
+        <p>Pr&ecirc;mio p/ a equipe com maior m&eacute;dia de pontos no final do campeonato, distribu&iacute;do entre os integrantes!</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Equipes ser&atilde;o definidas por sorteio assim que definido os participantes.</p>
+
+
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+</body>
+</html>

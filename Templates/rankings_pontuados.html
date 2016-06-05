@@ -1,0 +1,40 @@
+
+<!DOCTYPE HTML>
+{% load static %}
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link href="{% static 'css/rank.css' %}" rel="stylesheet">
+    
+
+        <title>Ranking</title>
+
+</head>
+<body>
+
+    <div class='page-header'>
+        <h1>Cartola FC do Itaú</h1>
+    </div>
+
+    <div class='botao'  style="text-align:center;">
+        <a href="" class="botao_ranking">Home</a>
+        <a href="/regras/" class="botao_regra">Regras</a>
+    </div>
+    <p> </p>
+    
+    <p id='status_mercado'> {{ mercado }} </p>
+
+        <div id='teste'>
+            <h3> Ranking Rodada </h3>
+                {{ html_pontuados | safe }}
+            <h3> Ranking Mês </h3>
+                {{ html_mes | safe }}
+            <h3> Ranking Geral </h3> 
+                {{ html_campeonato | safe }} 
+        </div>
+
+</body>
+</html>
+
